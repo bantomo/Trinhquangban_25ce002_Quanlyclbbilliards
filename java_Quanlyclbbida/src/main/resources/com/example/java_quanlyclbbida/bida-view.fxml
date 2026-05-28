@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" 
+      xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.example.java_quanlyclbbida.controller.BidaController"
+      style="-fx-background-color: #f0f0f0;">
+    
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    
+    <!-- Tiêu đề -->
+    <Label text="QUẢN LÝ CÂU LẠC BỘ BIDA" style="-fx-text-fill: #2c3e50;">
+        <font>
+            <Font name="System Bold" size="24.0"/>
+        </font>
+    </Label>
+    
+    <!-- Nút thêm bàn -->
+    <Button fx:id="btnThemBan" text="➕ Thêm bàn mới" onAction="#handleThemBan"
+            style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;"
+            prefWidth="200">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Button>
+    
+    <!-- ScrollPane chứa các bàn -->
+    <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+        <VBox.margin>
+            <Insets/>
+        </VBox.margin>
+        
+        <!-- FlowPane để hiển thị các bàn (tự động wrap) -->
+        <FlowPane fx:id="flowPaneBan" hgap="20.0" vgap="20.0" alignment="CENTER"
+                  style="-fx-background-color: transparent;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </FlowPane>
+    </ScrollPane>
+    
+    <!-- Thông tin giá -->
+    <Label text="Giá: 50,000 đồng/giờ | Có thể thêm/xóa/sửa bàn tùy ý" 
+           style="-fx-text-fill: #7f8c8d;">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Label>
+    
+</VBox>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File cấu hình giá tiền cho câu lạc bộ bida -->
+<config>
+    <giaTien>
+        <!-- Giá tiền tính theo đồng/giờ -->
+        <giaMotGio>50000</giaMotGio>
+    </giaTien>
+</config>
