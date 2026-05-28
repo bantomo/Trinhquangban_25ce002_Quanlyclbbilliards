@@ -95,7 +95,7 @@ mvn clean javafx:run
 # Run class: Launcher.java
 ```
 
-## Giải thích code cho sinh viên
+## Giải thích
 
 ### 1. Model (BanBida.java, HoaDon.java)
 - **BanBida**: Lớp đại diện cho một bàn bida với các thuộc tính cơ bản
