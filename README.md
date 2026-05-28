@@ -192,7 +192,7 @@ try (FileWriter writer = new FileWriter("HoaDon.txt", true)) {
 
 ## Mở rộng
 
-Sinh viên có thể mở rộng dự án bằng cách:
+Có thể mở rộng dự án bằng cách:
 1. Thêm nhiều bàn hơn
 2. Thêm chức năng đặt bàn trước
 3. Thêm báo cáo doanh thu
